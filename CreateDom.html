@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function createDiv(){
+        var divDomElement=document.createElement("div");
+        divDomElement.innerText="I am js,easy to undestand";
+        console.log(divDomElement);
+
+        var imageDomElement=document.createElement("img");
+        imageDomElement.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbCFD9hBq5ZBfdDqHa1IPFZORSL3EkPSxU2tomxsaeiOcuOyQMbUhNN-htl5xLTtZwvMU&usqp=CAU";
+        imageDomElement.width="300";
+        imageDomElement.height="300";
+        var bodyDomElement=document.querySelector("body");
+        bodyDomElement.appendChild(divDomElement);
+        bodyDomElement.appendChild(imageDomElement);
+        }
+    </script>
+</head>
+<body>
+    <h2 class="heading">Dom Manupulation</h2>
+    <p id="content">Lorem ipsum dolor sit amet 
+        consectetur adipisicing elit. Dolores natus
+         vitae sequi sint eaque possimus est, 
+         deserunt vel voluptas nisi non rem beatae expedita 
+         neque ea voluptatibus. Hic, aliquam. Dolore!</p>
+    <button onclick="createDiv()">Submit</button>
+</body>
+</html>
